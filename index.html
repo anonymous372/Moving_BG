@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movable Background</title>
+</head>
+<body>
+	<div id="moving_bg"></div>
+	<div class="box">
+		<p>This is Moving Background</p>
+	</div>
+</body>
+<script type="text/javascript" defer src="./script.js"></script>
+<style>
+	body{
+		margin:0;
+		overflow: hidden;
+	}
+	.box{
+		width: 400px;
+		padding: 20px;
+		opacity: 0.5;
+		position: absolute;
+		top: 50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		z-index: 2;
+		background-color: white;
+	}
+	.box{
+		text-align: center;
+		font-family: Courier New;
+		font-weight: 600;
+		font-size: 25px;
+	}
+	#moving_bg{
+		width:100vw;
+		height: 100vh;
+		background-color: #000;
+		position: relative absolute;
+		overflow: hidden;
+		z-index: -1;
+	}
+	.point_mbg{
+		position:absolute;
+		width:15px;
+		height:15px;
+		/*box-shadow: 0px 0px 10px yellow;*/
+		background-color: white;
+		border-radius: 50%;
+	}
+</style>
+</html>
