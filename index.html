@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Movable Background</title>
 </head>
 <body>
@@ -14,8 +15,11 @@
 	body{
 		margin:0;
 		overflow: hidden;
+		width: 100vw;
+		height:100vh;
 	}
 	.box{
+		display: none;
 		width: 400px;
 		padding: 20px;
 		opacity: 0.5;
@@ -36,9 +40,11 @@
 		width:100vw;
 		height: 100vh;
 		background-color: #000;
-		position: relative absolute;
+		position: absolute;
 		overflow: hidden;
 		z-index: -1;
+		top:0;
+		left:0;
 	}
 	.point_mbg{
 		position:absolute;
